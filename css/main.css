@@ -16,7 +16,7 @@ hr {
     background: black;
     border-bottom: 1px solid white;
     height: 75px;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .nav-item {
@@ -25,7 +25,7 @@ hr {
 
 .nav-link {
     color: white;
-    margin-top: 18px;
+    margin-top: 23px;
     font-weight: bold;
 }
 
@@ -37,32 +37,47 @@ hr {
     text-align: center;
     width: 90%;
     margin: 0 auto;
+    position: relative;
+    height: 300px;
+}
+
+#home-hero-img {
+    width: 92%;
 }
 
 #hero-logo {
+    display: inline-block;
     max-height: 210px;
     max-width: 210px;
     margin-top: 10px; 
     margin-bottom: 15px;
-    transform: scale(1, 1);
-    transition-duration: 1s;
 }
 
-#hero-logo:hover {
-    transform: scale(-1, 1);
-    transition-duration: 1s;
+#tag-logo {
+    display: inline-block;
+    max-height: 60px;
+    max-width: 60px;
+    position: absolute;
+    bottom: 150px;
 }
 
-h3 {
+#tag-logo-left {
+    display: inline-block;
+    max-height: 60px;
+    max-width: 60px;
+}
+
+#home-hero h3 {
     font-style: italic;
     font-weight: lighter;
     font-size: 30px;
+    margin-top: 2%;
 }
 
 #story {
-    margin: 5% 5%;
+    margin: 4% 5%;
     background: lightblue;
-    padding: 3% 5%;
+    padding: 2% 5%;
     box-shadow: 3px 3px 5px rgb(56, 56, 56);
     border-top-left-radius: 50px;
     border-right: 5px solid white;

@@ -1,10 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    position: relative;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
-    background: skyblue;
+    background: linear-gradient(to bottom, #56ccf2, #2f80ed);
     line-height: 1.1;
 }
 
@@ -13,7 +12,7 @@ hr {
 }
 
 .nav {
-    background: black;
+    background: linear-gradient(to top, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-bottom: 1px solid white;
     height: 75px;
     font-size: 13px;
@@ -36,73 +35,57 @@ hr {
 #home-hero {
     text-align: center;
     width: 90%;
-    margin: 0 auto;
-    position: relative;
-    height: 300px;
-}
-
-#home-hero-img {
-    width: 92%;
+    margin: 5% auto;
+    
 }
 
 #hero-logo {
     display: inline-block;
-    max-height: 210px;
-    max-width: 210px;
-    margin-top: 10px; 
-    margin-bottom: 15px;
-}
-
-#tag-logo {
-    display: inline-block;
-    max-height: 60px;
-    max-width: 60px;
-    position: absolute;
-    bottom: 150px;
-}
-
-#tag-logo-left {
-    display: inline-block;
-    max-height: 60px;
-    max-width: 60px;
+    max-height: 250px;
+    max-width: 250px;
+    /* border: 10px double black; */
 }
 
 #home-hero h3 {
+    display: inline-block;
     font-style: italic;
     font-weight: lighter;
     font-size: 30px;
-    margin-top: 2%;
+    margin-top: 2%; 
 }
 
 #story {
     margin: 4% 5%;
-    background: lightblue;
-    padding: 2% 5%;
-    box-shadow: 3px 3px 5px rgb(56, 56, 56);
-    border-top-left-radius: 50px;
-    border-right: 5px solid white;
+    padding: 4% 5% 2%;
+    border-top: 3px solid black;    
+}
+
+#story p {
+    border-left: 6px solid white;
+    padding-left: 14px;    
 }
 
 #hobby-logos {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background: rgb(187, 221, 233);
+    background: rgb(23, 179, 231);
     border-radius: 50px;
     border-right: 3px solid black;
     border-bottom: 3px solid black;    
-    box-shadow: 1px 1px 4px rgb(56, 56, 56);    
+    box-shadow: 1px 1px 4px rgb(56, 56, 56);
+    margin-bottom: 5%;    
 }
 
 .hobby {
-    max-height: 75px;
+    max-height: 100px;
     max-width: 75px;
     padding: 10px 10px;
 }
 
 #game-control {
     filter: invert(100%);
-    max-width: 85px;
+    max-width: 110px;
 }
 
 p {
@@ -117,6 +100,48 @@ p {
     box-shadow: 3px 3px 5px rgb(56, 56, 56);
     border-top-left-radius: 50px;
     border-right: 5px solid white;
+    border-bottom: 5px solid white;        
+}
+
+#contact {
+    margin: 5% 5%;
+    background: rgb(137, 167, 156);
+    padding: 3% 5%;
+    box-shadow: 3px 3px 5px rgb(56, 56, 56);
+    border-top-left-radius: 50px;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;    
+    min-height: 500px;
+}
+
+#contact #social-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#social-icons {
+    display: inline-block;
+}
+
+#social-icons img {
+    min-width: 40%;
+    margin: 10% 5% 20%;
+}
+
+.social-logo {
+    border-radius: 50%;
+    height: 120px;
+}
+
+#contact-moji {
+    max-width: 250px;
+    max-height: 250px;
+    display: block;
+    margin: auto auto;
+    padding-left: 3%;
 }
 
 .job {
@@ -152,7 +177,7 @@ h5 {
 .section-title {
     text-align: center;
     position: relative;
-    height: 50px;
+    height: 50px;    
 }
 
 p {

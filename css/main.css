@@ -7,6 +7,10 @@ body {
     line-height: 1.1;
 }
 
+/* -----------------------
+    GLOBAL STYLES 
+    ----------------------*/
+
 hr {
     margin-bottom: 0;
 }
@@ -32,193 +36,6 @@ hr {
     color: skyblue;
 }
 
-#home-hero {
-    text-align: center;
-    width: 90%;
-    margin: 5% auto;
-    
-}
-
-#hero-logo {
-    display: inline-block;
-    max-height: 250px;
-    max-width: 250px;
-    /* border: 10px double black; */
-}
-
-#home-hero h3 {
-    display: inline-block;
-    font-style: italic;
-    font-weight: lighter;
-    font-size: 30px;
-    margin-top: 2%; 
-}
-
-#story {
-    margin: 4% 5%;
-    padding: 4% 5% 2%;
-    border-top: 3px solid black;    
-}
-
-#story-text {
-    border-left: 6px solid white;
-    padding-left: 10px; 
-    margin-top: 30px;
-}
-
-#hobby-logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 5% 0;    
-}
-
-.hobby {
-    max-height: 100px;
-    max-width: 75px;
-    padding: 10px 10px;
-}
-
-#game-control {
-    filter: invert(100%);
-    max-width: 110px;
-}
-
-
-#resume {
-    margin: 5% 5%;
-    background: rgb(172, 241, 216);
-    padding: 3% 5%;
-    box-shadow: 3px 3px 5px rgb(56, 56, 56);
-    border-top-left-radius: 50px;
-    border-right: 5px solid white;
-    border-bottom: 5px solid white;        
-}
-
-#contact {
-    margin: 5% 5%;
-    background: rgb(137, 167, 156);
-    padding: 3% 5%;
-    box-shadow: 3px 3px 5px rgb(56, 56, 56);
-    border-top-left-radius: 50px;
-    border-right: 5px solid white;
-    border-bottom: 5px solid white;    
-    min-height: 500px;
-}
-
-#contact #social-icons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-}
-
-#social-icons {
-    display: inline-block;
-}
-
-#social-icons img {
-    min-width: 40%;
-    margin: 10% 5% 20%;
-}
-
-.social-logo {
-    border-radius: 50%;
-    height: 120px;
-}
-
-#contact-moji {
-    max-width: 250px;
-    max-height: 250px;
-    display: block;
-    margin: auto auto;
-    padding-left: 3%;
-}
-
-.job {
-    padding: 2% 0;
-}
-
-h2 {
-    font-weight: bold;
-    margin-bottom: 0;
-    vertical-align: middle;
-}
-
-h5 {
-    font-style: italic;
-    font-weight: lighter;
-}
-
-.subtitle-logo {
-    position: absolute;
-    max-height: 55px;
-    max-width: 55px;
-    display: inline-block;
-    left: 0;
-}
-
-.subtitle-logo-flip {
-    position: absolute;
-    max-height: 55px;
-    max-width: 55px;
-    display: inline-block;
-    right: 0;
-}
-
-.subtitle {
-    display: inline-block;
-    position: absolute;
-    margin-top: 6px;
-    right: 0;
-}
-
-.subtitle-flip {
-    display: inline-block;
-    position: absolute;
-    margin-top: 6px;
-    left: 0;
-}
-
-.section-title {
-    text-align: center;
-    position: relative;
-    height: 50px;    
-}
-
-.project-item {
-    margin: 5% 5%;
-    background: rgb(226, 226, 95);
-    padding: 3% 5%;
-    box-shadow: 3px 3px 5px rgb(56, 56, 56);
-    border-top-left-radius: 50px;
-    border-right: 5px solid white;
-    border-bottom: 5px solid white;    
-    min-height: 500px;
-}
-
-.project-item-flip {
-    margin: 5% 5%;
-    background: rgb(130, 143, 138);
-    padding: 3% 5%;
-    box-shadow: 3px 3px 5px rgb(56, 56, 56);
-    border-top-right-radius: 50px;
-    border-left: 5px solid white;
-    border-bottom: 5px solid white;    
-    min-height: 500px;
-}
-
-.project-screen {
-    max-width: 320px;
-    margin: 4%;
-    border: 10px double black;
-}
-
-.project-item-text {
-    margin: 4%;
-}
-
 .emph {
     font-weight: bold;
 }
@@ -239,3 +56,205 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+.section-title {
+    text-align: center;
+    position: relative;
+    height: 50px;    
+}
+
+/* -----------------------
+    HOME PAGE 
+    ----------------------*/
+
+    #home-hero {
+        text-align: center;
+        width: 90%;
+        margin: 5% auto;
+        
+    }
+
+    #hero-logo {
+        display: inline-block;
+        max-height: 250px;
+        max-width: 250px;
+    }
+
+    #home-hero h3 {
+        display: inline-block;
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 30px;
+        margin-top: 2%; 
+    }
+
+    #story {
+        margin: 4% 5%;
+        padding: 4% 5% 2%;
+        border-top: 3px solid black;    
+    }
+
+    #story-text {
+        border-left: 6px solid white;
+        padding-left: 10px; 
+        margin-top: 30px;
+    }
+
+    #hobby-logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5% 0;    
+    }
+
+    .hobby {
+        max-height: 100px;
+        max-width: 75px;
+        padding: 10px 10px;
+    }
+
+    #game-control {
+        filter: invert(100%);
+        max-width: 110px;
+    }
+
+/* -----------------------
+    RESUME PAGE 
+    ----------------------*/
+
+
+        #resume {
+            margin: 5% 5%;
+            background: rgb(172, 241, 216);
+            padding: 3% 5%;
+            box-shadow: 3px 3px 5px rgb(56, 56, 56);
+            border-top-left-radius: 50px;
+            border-right: 5px solid white;
+            border-bottom: 5px solid white;        
+        }
+
+        .job {
+            padding: 2% 0;
+        }
+
+        h2 {
+            font-weight: bold;
+            margin-bottom: 0;
+            vertical-align: middle;
+        }
+
+        h5 {
+            font-style: italic;
+            font-weight: lighter;
+        }
+
+/* -----------------------
+    CONTACT PAGE 
+    ----------------------*/
+
+            #contact {
+                margin: 5% 5%;
+                background: rgb(137, 167, 156);
+                padding: 3% 5%;
+                box-shadow: 3px 3px 5px rgb(56, 56, 56);
+                border-top-left-radius: 50px;
+                border-right: 5px solid white;
+                border-bottom: 5px solid white;    
+                min-height: 500px;
+            }
+
+            #contact #social-icons {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                text-align: center;
+            }
+
+            #social-icons {
+                display: inline-block;
+            }
+
+            #social-icons img {
+                min-width: 40%;
+                margin: 10% 5% 20%;
+            }
+
+            .social-logo {
+                border-radius: 50%;
+                height: 120px;
+            }
+
+            #contact-moji {
+                max-width: 250px;
+                max-height: 250px;
+                display: block;
+                margin: auto auto;
+                padding-left: 3%;
+            }
+
+            .subtitle-logo {
+                position: absolute;
+                max-height: 55px;
+                max-width: 55px;
+                display: inline-block;
+                left: 0;
+            }
+
+            .subtitle-logo-flip {
+                position: absolute;
+                max-height: 55px;
+                max-width: 55px;
+                display: inline-block;
+                right: 0;
+            }
+
+            .subtitle {
+                display: inline-block;
+                position: absolute;
+                margin-top: 6px;
+                right: 0;
+            }
+
+            .subtitle-flip {
+                display: inline-block;
+                position: absolute;
+                margin-top: 6px;
+                left: 0;
+            }
+
+/* -----------------------
+    PROJECTS PAGE 
+    ----------------------*/
+
+                .project-item {
+                    margin: 5% 5%;
+                    background: rgb(226, 226, 95);
+                    padding: 3% 5%;
+                    box-shadow: 3px 3px 5px rgb(56, 56, 56);
+                    border-top-left-radius: 50px;
+                    border-right: 5px solid white;
+                    border-bottom: 5px solid white;    
+                    min-height: 500px;
+                }
+
+                .project-item-flip {
+                    margin: 5% 5%;
+                    background: rgb(130, 143, 138);
+                    padding: 3% 5%;
+                    box-shadow: 3px 3px 5px rgb(56, 56, 56);
+                    border-top-right-radius: 50px;
+                    border-left: 5px solid white;
+                    border-bottom: 5px solid white;    
+                    min-height: 500px;
+                }
+
+                .project-screen {
+                    max-width: 320px;
+                    margin: 4%;
+                    border: 10px double black;
+                }
+
+                .project-item-text {
+                    margin: 4%;
+                }

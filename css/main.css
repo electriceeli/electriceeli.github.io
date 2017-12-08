@@ -16,7 +16,7 @@ hr {
 }
 
 .nav {
-    background: linear-gradient(to top, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top, #000000, #434343);
     border-bottom: 1px solid white;
     height: 75px;
     font-size: 13px;
@@ -257,4 +257,47 @@ footer {
 
                 .project-item-text {
                     margin: 4%;
+                }
+
+/* -----------------------
+    BLOG PAGE 
+    ----------------------*/
+
+                .blog-btn {
+                    background: linear-gradient(to bottom, #7634d9, #a02bb8);
+                    border-radius: 60px;
+                    font-family: Arial;
+                    color: #ffffff;
+                    font-size: 20px;
+                    padding: 5px 10px;
+                    border: solid #506f83 5px;
+                    text-decoration: none;
+                }
+
+                .btn-div {
+                    text-align: center;
+                }
+                  
+
+                a:hover {
+                    text-decoration: none;
+                }
+
+                .date-value {
+                    font-size: 14px;
+                    font-style: italic;
+                }
+
+                .blog-prebox {
+                    min-height: 200px;
+                }
+
+                .blog-prebox-flip {
+                    min-height: 200px;
+                    color: rgb(255, 253, 244);
+                }
+
+                .blog-head {
+                    color: rgb(62, 70, 146);
+                    text-shadow: 3px 3px 4px white;
                 }

@@ -18,12 +18,8 @@ hr {
 .nav {
     background: linear-gradient(to top, #000000, #434343);
     border-bottom: 1px solid white;
-    height: 75px;
-    font-size: 13px;
-}
-
-.nav-item {
-    vertical-align: middle;    
+    padding-bottom: 3%;
+    font-size: 14px;
 }
 
 .nav-link {
@@ -135,6 +131,18 @@ footer {
 
         .job {
             padding: 2% 0;
+            position: relative;
+        }
+
+        .company-logo {
+            min-width: 120px;
+            min-height: 120px;
+            top: 0;
+            visibility: hidden;
+        }
+
+        #daisy-logo {
+            min-width: 160px;
         }
 
         h2 {
@@ -249,9 +257,12 @@ footer {
                     min-height: 500px;
                 }
 
+                .project-img-wrap {
+                    text-align: center;
+                }
+
                 .project-screen {
                     max-width: 320px;
-                    margin: 4%;
                     border: 10px double black;
                 }
 
@@ -301,3 +312,66 @@ footer {
                     color: rgb(62, 70, 146);
                     text-shadow: 3px 3px 4px white;
                 }
+
+/* -----------------------
+    MEDIA QUERY 
+    ----------------------*/
+
+@media screen and (min-width: 575px) {
+    .company-logo {
+        visibility: initial;
+    }
+
+    .nav-item {
+        font-size: 20px;
+    }
+}    
+
+@media screen and (min-width: 1000px) {
+
+    .nav {
+        padding-bottom: 2%;
+    }
+    
+    .nav-link {
+        margin-top: 18px;
+    }
+
+    p {
+        font-size: 22px;
+    }
+
+    #story {
+        margin-bottom: 0;
+        margin-top: 0;
+        padding-top: 15px;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+
+    #story-text {
+        border-left: 12px double white;
+        max-width: 80%;
+        margin: 5% auto;
+    }
+
+    #big-btm-fix {
+        margin-bottom: 3%;
+    }
+
+    #hobby-logos {
+        margin-bottom: 0;
+    }
+
+    .project-screen {
+        max-width: 550px;
+    }
+
+    #contact-moji {
+        max-height: 300px;
+        max-width: 300px;
+    }
+
+}

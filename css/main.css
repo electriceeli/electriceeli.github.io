@@ -179,7 +179,6 @@ footer {
 
             .blog-box {
                 margin: 1%;
-                width: 30%;
                 background: lightblue;
                 padding: 3%;
             }
@@ -320,7 +319,7 @@ footer {
                     border-right: 4px solid white;
                     border-bottom: 4px solid white;   
                     position: relative; 
-                    margin: 2%;
+                    margin: 2% auto;
                     min-height: 200px;
                 }
 
@@ -382,10 +381,18 @@ footer {
     .project-item-blog {
         margin: 1%;
         min-height: auto
+    }
 }    
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
 
+    .blog-box {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    
     .nav {
         padding-bottom: 2%;
     }

@@ -171,6 +171,19 @@ footer {
                 min-height: 500px;
             }
 
+            #blog-holder {
+                margin: 5% auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .blog-box {
+                margin: 1%;
+                width: 30%;
+                background: lightblue;
+                padding: 3%;
+            }
+
             #contact #social-icons {
                 display: flex;
                 flex-direction: row;
@@ -279,16 +292,56 @@ footer {
                     border-radius: 60px;
                     font-family: Arial;
                     color: #ffffff;
+                    font-size: 16px;
+                    padding: 5px 10px;
+                    border: solid #506f83 3px;
+                    text-decoration: none;
+                    position: absolute;
+                    bottom: 0;
+                    margin: 5%;
+                }
+
+                .blog-btn-old {
+                    background: linear-gradient(to bottom, #7634d9, #a02bb8);
+                    border-radius: 60px;
+                    font-family: Arial;
+                    color: #ffffff;
                     font-size: 20px;
                     padding: 5px 10px;
                     border: solid #506f83 5px;
                     text-decoration: none;
                 }
 
+                .project-item-blog {
+                    background: rgb(94, 84, 236);
+                    padding: 3% 5%;
+                    box-shadow: 3px 3px 5px rgb(56, 56, 56);
+                    border-top-left-radius: 50px;
+                    border-right: 4px solid white;
+                    border-bottom: 4px solid white;   
+                    position: relative; 
+                    margin: 2%;
+                    min-height: 200px;
+                }
+
+                .project-item-blog-flip {
+                    margin: 5% 5%;
+                    background: rgb(130, 143, 138);
+                    padding: 3% 5%;
+                    box-shadow: 3px 3px 5px rgb(56, 56, 56);
+                    border-top-right-radius: 50px;
+                    border-left: 5px solid white;
+                    border-bottom: 5px solid white;    
+                    min-height: 500px;
+                }
+
                 .btn-div {
                     text-align: center;
                 }
                   
+                .title {
+                    color: white;
+                }
 
                 a:hover {
                     text-decoration: none;
@@ -325,6 +378,10 @@ footer {
     .nav-item {
         font-size: 20px;
     }
+
+    .project-item-blog {
+        margin: 1%;
+        min-height: auto
 }    
 
 @media screen and (min-width: 1000px) {

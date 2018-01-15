@@ -1,10 +1,6 @@
 'use strict';
 
-// const blogsLocal = require('../data/blogs.js');
-
 const blogHolder = document.getElementById('blog-holder');
-
-// console.log(blogsLocal);
 
 const xhr = new XMLHttpRequest();
 xhr.open("GET", "../data/blog-posts.json");
@@ -28,13 +24,20 @@ xhr.addEventListener('load', function() {
             dater.appendChild(rule);
             rule.classList.add('white-pls');
             blogBox.appendChild(body).textContent = blogPosts[i].content;
+            blogBox.setAttribute("id", "post-body");
+
+            let blogPostCollection = document.getElementsByClassName("blog-box");
+            
+            for (let x = 0; x < blogPostCollection.length; x++) {
+                blogPostCollection[x].addEventListener("click", function() {
+                    document.getElementById("focus-box").style.display = "block";
+                    document.getElementById("focus-box").innerHTML = this.innerHTML;
+                });
+            };
         }
     }
 });
 
-document.getElementsByClassName("blog-box").addEventListener("click", () => {
-
-});
 
 // Local storage work for next version ------------------
 

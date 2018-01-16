@@ -5,6 +5,17 @@ body {
     font-family: Helvetica, sans-serif;
     background: linear-gradient(to bottom, #56ccf2, #2f80ed);
     line-height: 1.1;
+    animation: fade 0.9s;
+    min-height: 100vh;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* -----------------------

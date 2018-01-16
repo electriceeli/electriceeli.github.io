@@ -7,12 +7,12 @@
 // const $ = require('jquery');
 
 // let blogs = require("./blog");
-// let home = require("./home");
+let home = require("./home");
 
-// (function pageLoad() {
-//   home.homeLoad();
+(function pageLoad() {
+  home.homeLoad();
 //   blogs.blogLoad();
-// })();
+})();
 
 // $("#blog-page").on('click', () => {
 // });

@@ -1,8 +1,31 @@
 'use strict';
 
-const $ = require('jquery');
+// ALL COMMENTED LINES WILL BE USED TO MODULARIZE. DO NOT DELETE ELI
 
-module.exports.blogLoad = () => {
+// const $ = require('jquery');
+
+// module.exports.blogLoad = () => {
+    // <p id="more-info">Click a blog post to read below</p>
+
+    // <div id="focus-box">
+    // </div>
+
+    // <div class="container" id="blog-holder"></div>
+  const contentElement = document.getElementById("main");
+   
+  let focusBoxTitle = document.createElement('p');
+  focusBoxTitle.setAttribute("id", "more-info");
+  focusBoxTitle.innerHTML = "Click a blog post below to read it here";
+  contentElement.appendChild(focusBoxTitle);
+
+  let focusBox = document.createElement('div');
+  focusBox.setAttribute("id", "focus-box");
+  contentElement.appendChild(focusBox);
+  
+  let createBlogHolder = document.createElement('div');
+  createBlogHolder.classList.add('container');
+  createBlogHolder.setAttribute("id", "blog-holder");
+  contentElement.appendChild(createBlogHolder);
   const blogHolder = document.getElementById('blog-holder');
 
   const xhr = new XMLHttpRequest();
@@ -36,9 +59,10 @@ module.exports.blogLoad = () => {
           blogPostCollection[x].addEventListener("click", () => {
               focus.style.display = "block";
               focus.innerHTML = blogPostCollection[x].innerHTML;
+              document.documentElement.scrollTop = 0;
           });
         }
       }
     }
   });
-};
+// };

@@ -1,17 +1,21 @@
 'use strict';
 
-const $ = require('jquery');
+// ALL COMMENTED LINES WILL BE USED TO MODULARIZE. DO NOT DELETE ELI
 
-let blogs = require("./blog");
-let home = require("./home");
 
-(function pageLoad() {
-  home.homeLoad();
-  blogs.blogLoad();
-})();
 
-$("#blog-page").on('click', () => {
-});
+// const $ = require('jquery');
+
+// let blogs = require("./blog");
+// let home = require("./home");
+
+// (function pageLoad() {
+//   home.homeLoad();
+//   blogs.blogLoad();
+// })();
+
+// $("#blog-page").on('click', () => {
+// });
 
 
 

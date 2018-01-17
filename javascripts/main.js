@@ -2,22 +2,25 @@
 
 // ALL COMMENTED LINES WILL BE USED TO MODULARIZE. DO NOT DELETE ELI
 
-
-
-// const $ = require('jquery');
+const $ = require('jquery');
 
 // let blogs = require("./blog");
 let home = require("./home");
 
+let printFooterDate = () => {
+  let todaysDate = new Date(),
+  year = todaysDate.getFullYear();
+  $("#footer-date").text(`${year}`);
+};
+
 (function pageLoad() {
   home.homeLoad();
+  printFooterDate();
 //   blogs.blogLoad();
 })();
 
 // $("#blog-page").on('click', () => {
 // });
-
-
 
 
 

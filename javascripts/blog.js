@@ -5,12 +5,6 @@
 // const $ = require('jquery');
 
 // module.exports.blogLoad = () => {
-    // <p id="more-info">Click a blog post to read below</p>
-
-    // <div id="focus-box">
-    // </div>
-
-    // <div class="container" id="blog-holder"></div>
   const contentElement = document.getElementById("main");
    
   let focusBoxTitle = document.createElement('p');
@@ -55,6 +49,7 @@
         let blogPostCollection = document.getElementsByClassName("blog-box");
         
         for (let x = 0; x < blogPostCollection.length; x++) {
+          /*jshint loopfunc: true */
           const focus = document.getElementById("focus-box");
           blogPostCollection[x].addEventListener("click", () => {
               focus.style.display = "block";

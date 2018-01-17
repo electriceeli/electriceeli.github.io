@@ -5,6 +5,17 @@ body {
     font-family: Helvetica, sans-serif;
     background: linear-gradient(to bottom, #56ccf2, #2f80ed);
     line-height: 1.1;
+    animation: fade 0.9s;
+    min-height: 100vh;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* -----------------------
@@ -171,6 +182,18 @@ footer {
                 min-height: 500px;
             }
 
+            #blog-holder {
+                margin: 5% auto;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .blog-box {
+                margin: 1%;
+                background: lightblue;
+                padding: 3%;
+            }
+
             #contact #social-icons {
                 display: flex;
                 flex-direction: row;
@@ -274,7 +297,38 @@ footer {
     BLOG PAGE 
     ----------------------*/
 
+                #focus-box {
+                    margin: 2% auto;
+                    padding: 2%;
+                    width: 90%;
+                    height: 40vh;
+                    background: rgba(192, 192, 192, 0.2);
+                    overflow: scroll;
+                    border: 4px solid white;
+                    display: none;
+                    font-size: 40px;
+                }
+
+                #more-info {
+                    margin: 2% auto;
+                    text-align: center;
+                }
+
                 .blog-btn {
+                    background: linear-gradient(to bottom, #7634d9, #a02bb8);
+                    border-radius: 60px;
+                    font-family: Arial;
+                    color: #ffffff;
+                    font-size: 16px;
+                    padding: 5px 10px;
+                    border: solid #506f83 3px;
+                    text-decoration: none;
+                    position: absolute;
+                    bottom: 0;
+                    margin: 5%;
+                }
+
+                .blog-btn-old {
                     background: linear-gradient(to bottom, #7634d9, #a02bb8);
                     border-radius: 60px;
                     font-family: Arial;
@@ -285,10 +339,47 @@ footer {
                     text-decoration: none;
                 }
 
+                .project-item-blog {
+                    background: rgb(3, 3, 3);
+                    padding: 3% 5%;
+                    box-shadow: 3px 3px 5px rgb(56, 56, 56);
+                    border-top-left-radius: 50px;
+                    border-right: 4px solid white;
+                    border-bottom: 4px solid white;
+                    color: rgb(209, 206, 206);   
+                    position: relative; 
+                    min-height: 200px;
+                    margin: 4%;
+                    height: 350px;
+                    overflow: scroll;
+                }
+
+                h6 {
+                    color: lightblue;
+                }
+
+                .white-pls {
+                    background: white;
+                }
+
+                .project-item-blog-flip {
+                    margin: 5% 5%;
+                    background: rgb(130, 143, 138);
+                    padding: 3% 5%;
+                    box-shadow: 3px 3px 5px rgb(56, 56, 56);
+                    border-top-right-radius: 50px;
+                    border-left: 5px solid white;
+                    border-bottom: 5px solid white;    
+                    min-height: 500px;
+                }
+
                 .btn-div {
                     text-align: center;
                 }
                   
+                .title {
+                    color: white;
+                }
 
                 a:hover {
                     text-decoration: none;
@@ -325,10 +416,26 @@ footer {
     .nav-item {
         font-size: 20px;
     }
+
+    .project-item-blog {
+        margin: 1%;
+        min-height: auto
+    }
 }    
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
 
+    .blog-box {
+        width: 30%;
+    }
+
+    .project-item-blog {
+        padding: 2%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    
     .nav {
         padding-bottom: 2%;
     }

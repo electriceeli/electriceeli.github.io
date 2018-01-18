@@ -38,7 +38,7 @@ $("#home-link").click((e) => {
   home.loadHome();
 });
 
-$("blog-link").click((e) => {
+$("#blog-link").click((e) => {
   e.preventDefault();
   $("main").html("");
   blog.loadBlog();

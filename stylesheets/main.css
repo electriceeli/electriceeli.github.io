@@ -1,0 +1,400 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #56ccf2, #2f80ed);
+  line-height: 1.1;
+  animation: fade 0.9s;
+  min-height: 100vh; }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+button {
+  width: 10vw;
+  height: 10vh;
+  background: white; }
+
+/* -----------------------
+    GLOBAL STYLES 
+    ----------------------*/
+hr {
+  margin-bottom: 0; }
+
+.nav {
+  background: linear-gradient(to top, #000000, #434343);
+  border-bottom: 1px solid white;
+  padding-bottom: 3%;
+  font-size: 14px; }
+
+.nav-link {
+  color: white;
+  margin-top: 23px;
+  font-weight: bold; }
+
+.nav-link:hover {
+  color: skyblue; }
+
+.emph {
+  font-weight: bold; }
+
+p {
+  font-size: 20px;
+  margin-bottom: 1.5rem; }
+
+footer {
+  background: black;
+  color: white;
+  padding-top: 25px;
+  margin-top: 20px;
+  position: static;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  text-align: center; }
+
+.section-title {
+  text-align: center;
+  position: relative;
+  height: 50px; }
+
+/* -----------------------
+    HOME PAGE 
+    ----------------------*/
+#home-hero {
+  text-align: center;
+  width: 90%;
+  margin: 5% auto; }
+
+#hero-logo {
+  display: inline-block;
+  max-height: 250px;
+  max-width: 250px; }
+
+#home-hero h3 {
+  display: inline-block;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 30px;
+  margin-top: 2%; }
+
+#story {
+  margin: 4% 5%;
+  padding: 4% 5% 2%;
+  border-top: 3px solid black; }
+
+#story-text {
+  border-left: 6px solid white;
+  padding-left: 10px;
+  margin-top: 30px; }
+
+#hobby-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5% 0; }
+
+.hobby {
+  max-height: 100px;
+  max-width: 75px;
+  padding: 10px 10px; }
+
+#game-control {
+  filter: invert(100%);
+  max-width: 110px; }
+
+/* -----------------------
+    RESUME PAGE 
+    ----------------------*/
+#resume {
+  margin: 5% 5%;
+  background: #acf1d8;
+  padding: 3% 5%;
+  box-shadow: 3px 3px 5px #383838;
+  border-top-left-radius: 50px;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white; }
+
+.job {
+  padding: 2% 0;
+  position: relative; }
+
+.company-logo {
+  min-width: 120px;
+  min-height: 120px;
+  top: 0;
+  visibility: hidden; }
+
+#daisy-logo {
+  min-width: 160px; }
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 0;
+  vertical-align: middle; }
+
+h5 {
+  font-style: italic;
+  font-weight: lighter; }
+
+/* -----------------------
+    CONTACT PAGE 
+    ----------------------*/
+#contact {
+  margin: 5% 5%;
+  background: #89a79c;
+  padding: 3% 5%;
+  box-shadow: 3px 3px 5px #383838;
+  border-top-left-radius: 50px;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+  min-height: 500px; }
+
+#blog-holder {
+  margin: 5% auto;
+  display: flex;
+  flex-wrap: wrap; }
+
+.blog-box {
+  margin: 1%;
+  background: lightblue;
+  padding: 3%; }
+
+#contact #social-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center; }
+
+#social-icons {
+  display: inline-block; }
+
+#social-icons img {
+  min-width: 40%;
+  margin: 10% 5% 20%; }
+
+.social-logo {
+  border-radius: 50%;
+  height: 120px; }
+
+#contact-moji {
+  max-width: 250px;
+  max-height: 250px;
+  display: block;
+  margin: auto auto;
+  padding-left: 3%; }
+
+.subtitle-logo {
+  position: absolute;
+  max-height: 55px;
+  max-width: 55px;
+  display: inline-block;
+  left: 0; }
+
+.subtitle-logo-flip {
+  position: absolute;
+  max-height: 55px;
+  max-width: 55px;
+  display: inline-block;
+  right: 0; }
+
+.subtitle {
+  display: inline-block;
+  position: absolute;
+  margin-top: 6px;
+  right: 0; }
+
+.subtitle-flip {
+  display: inline-block;
+  position: absolute;
+  margin-top: 6px;
+  left: 0; }
+
+/* -----------------------
+    PROJECTS PAGE 
+    ----------------------*/
+.project-item {
+  margin: 5% 5%;
+  background: #e2e25f;
+  padding: 3% 5%;
+  box-shadow: 3px 3px 5px #383838;
+  border-top-left-radius: 50px;
+  border-right: 5px solid white;
+  border-bottom: 5px solid white;
+  min-height: 500px; }
+
+.project-item-flip {
+  margin: 5% 5%;
+  background: #828f8a;
+  padding: 3% 5%;
+  box-shadow: 3px 3px 5px #383838;
+  border-top-right-radius: 50px;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  min-height: 500px; }
+
+.project-img-wrap {
+  text-align: center; }
+
+.project-screen {
+  max-width: 320px;
+  border: 10px double black; }
+
+.project-item-text {
+  margin: 4%; }
+
+/* -----------------------
+    BLOG PAGE 
+    ----------------------*/
+#focus-box {
+  margin: 2% auto;
+  padding: 2%;
+  width: 90%;
+  height: 40vh;
+  background: rgba(192, 192, 192, 0.2);
+  overflow: scroll;
+  border: 4px solid white;
+  display: none;
+  font-size: 40px; }
+
+#more-info {
+  margin: 2% auto;
+  text-align: center; }
+
+.blog-btn {
+  background: linear-gradient(to bottom, #7634d9, #a02bb8);
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 5px 10px;
+  border: solid #506f83 3px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  margin: 5%; }
+
+.blog-btn-old {
+  background: linear-gradient(to bottom, #7634d9, #a02bb8);
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 10px;
+  border: solid #506f83 5px;
+  text-decoration: none; }
+
+.project-item-blog {
+  background: #030303;
+  padding: 3% 5%;
+  box-shadow: 3px 3px 5px #383838;
+  border-top-left-radius: 50px;
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  color: #d1cece;
+  position: relative;
+  min-height: 200px;
+  margin: 4%;
+  height: 350px;
+  overflow: scroll; }
+
+h6 {
+  color: lightblue; }
+
+.white-pls {
+  background: white; }
+
+.project-item-blog-flip {
+  margin: 5% 5%;
+  background: #828f8a;
+  padding: 3% 5%;
+  box-shadow: 3px 3px 5px #383838;
+  border-top-right-radius: 50px;
+  border-left: 5px solid white;
+  border-bottom: 5px solid white;
+  min-height: 500px; }
+
+.btn-div {
+  text-align: center; }
+
+.title {
+  color: white; }
+
+a:hover {
+  text-decoration: none; }
+
+.date-value {
+  font-size: 14px;
+  font-style: italic; }
+
+.blog-prebox {
+  min-height: 200px; }
+
+.blog-prebox-flip {
+  min-height: 200px;
+  color: #fffdf4; }
+
+.blog-head {
+  color: #3e4692;
+  text-shadow: 3px 3px 4px white; }
+
+/* -----------------------
+    MEDIA QUERY 
+    ----------------------*/
+@media screen and (min-width: 575px) {
+  .company-logo {
+    visibility: initial; }
+
+  .nav-item {
+    font-size: 20px; }
+
+  .project-item-blog {
+    margin: 1%;
+    min-height: auto; } }
+@media screen and (min-width: 700px) {
+  .blog-box {
+    width: 30%; }
+
+  .project-item-blog {
+    padding: 2%; } }
+@media screen and (min-width: 1000px) {
+  .nav {
+    padding-bottom: 2%; }
+
+  .nav-link {
+    margin-top: 18px; }
+
+  p {
+    font-size: 22px; }
+
+  #story {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 15px; }
+
+  .subtitle {
+    font-size: 40px; }
+
+  #story-text {
+    border-left: 12px double white;
+    max-width: 80%;
+    margin: 5% auto; }
+
+  #big-btm-fix {
+    margin-bottom: 3%; }
+
+  #hobby-logos {
+    margin-bottom: 0; }
+
+  .project-screen {
+    max-width: 550px; }
+
+  #contact-moji {
+    max-height: 300px;
+    max-width: 300px; } }
+
+/*# sourceMappingURL=main.css.map */

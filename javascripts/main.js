@@ -4,8 +4,10 @@
 
 const $ = require('jquery');
 
-// let blogs = require("./blog");
 let home = require("./home");
+let contact = require("./contact");
+let projects = require("./projects");
+let blog = require("./blog");
 
 let printFooterDate = () => {
   let todaysDate = new Date(),
@@ -14,13 +16,33 @@ let printFooterDate = () => {
 };
 
 (function pageLoad() {
-  home.homeLoad();
+  home.loadHome();
   printFooterDate();
-//   blogs.blogLoad();
 })();
 
-// $("#blog-page").on('click', () => {
-// });
+$("#contact-link").click((e) => {
+  e.preventDefault();
+  $("main").html("");
+  contact.loadContact();
+});
+
+$("#project-link").click((e) => {
+  e.preventDefault();
+  $("main").html("");
+  projects.loadProjects();
+});
+
+$("#home-link").click((e) => {
+  e.preventDefault();
+  $("main").html("");
+  home.loadHome();
+});
+
+$("blog-link").click((e) => {
+  e.preventDefault();
+  $("main").html("");
+  blog.loadBlog();
+});
 
 
 

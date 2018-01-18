@@ -2,22 +2,47 @@
 
 // ALL COMMENTED LINES WILL BE USED TO MODULARIZE. DO NOT DELETE ELI
 
+const $ = require('jquery');
 
-
-// const $ = require('jquery');
-
-// let blogs = require("./blog");
 let home = require("./home");
+let contact = require("./contact");
+let projects = require("./projects");
+let blog = require("./blog");
+
+let printFooterDate = () => {
+  let todaysDate = new Date(),
+  year = todaysDate.getFullYear();
+  $("#footer-date").text(`${year}`);
+};
 
 (function pageLoad() {
-  home.homeLoad();
-//   blogs.blogLoad();
+  home.loadHome();
+  printFooterDate();
 })();
 
-// $("#blog-page").on('click', () => {
-// });
+$("#contact-link").click((e) => {
+  e.preventDefault();
+  $("main").html("");
+  contact.loadContact();
+});
 
+$("#project-link").click((e) => {
+  e.preventDefault();
+  $("main").html("");
+  projects.loadProjects();
+});
 
+$("#home-link").click((e) => {
+  e.preventDefault();
+  $("main").html("");
+  home.loadHome();
+});
+
+$("#blog-link").click((e) => {
+  e.preventDefault();
+  $("main").html("");
+  blog.loadBlog();
+});
 
 
 

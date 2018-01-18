@@ -4,7 +4,7 @@
 
 const $ = require('jquery');
 
-module.exports.homeLoad = function() {
+module.exports.loadHome = function() {
   let $heroDiv = $('<div></div>');
   let $heroImgBox = $('<div></div>');
   let $homeTitle = $('<h3>"Hi, my name is Eli Wilson and I am a software developer."</h3>');
@@ -22,10 +22,10 @@ module.exports.homeLoad = function() {
   $("main").append($heroDiv);
   $heroDiv.attr("id", "home-hero");
 
-  $("#home-hero").append($heroImgBox);
+  $($heroDiv).append($heroImgBox);
   $heroImgBox.attr("id", "home-hero-img");
   $('<img src="../img/fam-guy-eli.png" id="hero-logo"></img>"').appendTo("#home-hero-img");
-  $("#home-hero").append($homeTitle);  
+  $($heroDiv).append($homeTitle);  
 
   $("main").append($storyBox);
   $storyBox.attr("id", "story");

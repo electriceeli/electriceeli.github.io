@@ -38,12 +38,6 @@ $("#home-link").click((e) => {
   home.loadHome();
 });
 
-$("#blog-link").click((e) => {
-  e.preventDefault();
-  $("main").html("");
-  blog.loadBlog();
-});
-
 
 
 // Local storage work for next version ------------------

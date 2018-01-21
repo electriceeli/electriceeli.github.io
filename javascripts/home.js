@@ -7,7 +7,7 @@ const $ = require('jquery');
 module.exports.loadHome = function() {
   let $heroDiv = $('<div></div>');
   let $heroImgBox = $('<div></div>');
-  let $homeTitle = $('<h3>"Hi, my name is Eli Wilson and I am a software developer."</h3>');
+  let $homeTitle = $('<h3>"Hi, my name is Eli Wilson and I am a web developer."</h3>');
   let $storyBox = $('<div></div>');
   let $sectionHeader = $('<div></div>');
   let $sectionLogo = $('<img></img>');
@@ -17,6 +17,11 @@ module.exports.loadHome = function() {
   let $hockeyIcon = $('<img></img>');
   let $gamingIcon = $('<img></img>');
   let $guitarIcon = $('<img></img>');
+  let $toolsDiv = $('<div></div>');
+  let $toolsTitle = $('<h2>My Tools</h2>');
+  let $tools = $('<h4>Javascript, jQuery, Node.js, Sass, Grunt, Browserify, Handlebars, HTML5</h4>');
+  let $canvasBox = $('<canvas></canvas>');
+  let $canvasDiv = $('<div></div>');
   
 
   $("main").append($heroDiv);
@@ -24,7 +29,7 @@ module.exports.loadHome = function() {
 
   $($heroDiv).append($heroImgBox);
   $heroImgBox.attr("id", "home-hero-img");
-  $('<img src="../img/fam-guy-eli.png" id="hero-logo"></img>"').appendTo("#home-hero-img");
+  $('<img src="../img/eli-face.png" id="hero-logo"></img>"').appendTo("#home-hero-img");
   $($heroDiv).append($homeTitle);  
 
   $("main").append($storyBox);
@@ -40,4 +45,14 @@ module.exports.loadHome = function() {
     id: "game-control"
   });
   $guitarIcon.addClass("hobby").attr("src", "../img/guitar.png");
+
+  $("main").append($toolsDiv);
+  $toolsDiv.attr("id", "toolsDiv");
+  $($toolsDiv).append($toolsTitle);
+  $($toolsDiv).append($tools);
+
+  $("main").append($canvasDiv);
+  $canvasDiv.attr("id", "canv");
+  $($canvasDiv).append($canvasBox);
+  $canvasBox.attr("id", "myCanvas");
 };

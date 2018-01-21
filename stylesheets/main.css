@@ -13,10 +13,14 @@ body {
     opacity: 0; }
   100% {
     opacity: 1; } }
-button {
-  width: 10vw;
-  height: 10vh;
-  background: white; }
+canvas {
+  border: 5px double white; }
+
+#canv {
+  text-align: center; }
+
+#toolsDiv {
+  margin: 0 10% 4%; }
 
 /* -----------------------
     GLOBAL STYLES 
@@ -26,9 +30,7 @@ hr {
 
 .nav {
   background: linear-gradient(to top, #000000, #434343);
-  border-bottom: 1px solid white;
-  padding-bottom: 3%;
-  font-size: 14px; }
+  padding-bottom: 2%; }
 
 .nav-link {
   color: white;
@@ -96,6 +98,10 @@ footer {
   flex-direction: row;
   justify-content: center;
   margin: 5% 0; }
+
+.hobby:hover {
+  transform: scale(-1, 1);
+  transition-duration: 1s; }
 
 .hobby {
   max-height: 100px;
@@ -350,7 +356,7 @@ a:hover {
     visibility: initial; }
 
   .nav-item {
-    font-size: 20px; }
+    font-size: 18px; }
 
   .project-item-blog {
     margin: 1%;
@@ -364,9 +370,6 @@ a:hover {
 @media screen and (min-width: 1000px) {
   .nav {
     padding-bottom: 2%; }
-
-  .nav-link {
-    margin-top: 18px; }
 
   p {
     font-size: 22px; }

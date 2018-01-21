@@ -1,57 +1,6 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
-// ALL COMMENTED LINES WILL BE USED TO MODULARIZE. DO NOT DELETE ELI
-
-const blogHolder = document.getElementById('blog-holder');
-
-let focusBoxTitle = document.createElement('p');
-  focusBoxTitle.setAttribute("id", "more-info");
-  focusBoxTitle.innerHTML = "Click a blog post below to read it here";
-  contentElement.prepend(focusBoxTitle);
-  
-// console.log(blogsLocal);
-
- const xhr = new XMLHttpRequest();
- xhr.open("GET", "../data/blog-posts.json");
- xhr.send();
-
-xhr.addEventListener('load', function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var blogPosts = JSON.parse(this.responseText);
-        for (let i = 0; i < blogPosts.length; i++) {
-            let blogBox = document.createElement('div');
-            blogBox.classList.add('blog-box');          
-            let header = document.createElement('h4');
-            let dater = document.createElement('h6');
-            let body = document.createElement('p');
-            let rule = document.createElement('hr');
-            blogHolder.appendChild(blogBox);
-            blogBox.classList.add('project-item-blog');
-            blogBox.appendChild(header).textContent = blogPosts[i].title;
-            header.classList.add('title');
-            blogBox.appendChild(dater).textContent = blogPosts[i].date;
-             dater.appendChild(rule);
-             rule.classList.add('white-pls');
-             blogBox.appendChild(body).textContent = blogPosts[i].content;
-           blogBox.setAttribute("id", "post-body");
-
-            let blogPostCollection = document.getElementsByClassName("blog-box");
-            
-            for (let x = 0; x < blogPostCollection.length; x++) {
-                blogPostCollection[x].addEventListener("click", function() {
-                    document.getElementById("focus-box").style.display = "block";
-                    document.getElementById("focus-box").innerHTML = this.innerHTML;
-                    document.documentElement.scrollTop = 0;
-                });
-            }
-         }
-     }
- });
-
-},{}],2:[function(require,module,exports){
-'use strict';
-
 const $ = require('jquery');
 
 // ALL COMMENTED LINES WILL BE USED TO MODULARIZE. DO NOT DELETE ELI
@@ -96,7 +45,7 @@ module.exports.loadContact = () => {
 };
 
 
-},{"jquery":6}],3:[function(require,module,exports){
+},{"jquery":5}],2:[function(require,module,exports){
 'use strict';
 
 // ALL COMMENTED LINES WILL BE USED TO MODULARIZE. DO NOT DELETE ELI
@@ -106,7 +55,7 @@ const $ = require('jquery');
 module.exports.loadHome = function() {
   let $heroDiv = $('<div></div>');
   let $heroImgBox = $('<div></div>');
-  let $homeTitle = $('<h3>"Hi, my name is Eli Wilson and I am a software developer."</h3>');
+  let $homeTitle = $('<h3>"Hi, my name is Eli Wilson and I am a web developer."</h3>');
   let $storyBox = $('<div></div>');
   let $sectionHeader = $('<div></div>');
   let $sectionLogo = $('<img></img>');
@@ -116,6 +65,11 @@ module.exports.loadHome = function() {
   let $hockeyIcon = $('<img></img>');
   let $gamingIcon = $('<img></img>');
   let $guitarIcon = $('<img></img>');
+  let $toolsDiv = $('<div></div>');
+  let $toolsTitle = $('<h2>My Tools</h2>');
+  let $tools = $('<h4>Javascript, jQuery, Node.js, Sass, Grunt, Browserify, Handlebars, HTML5</h4>');
+  let $canvasBox = $('<canvas></canvas>');
+  let $canvasDiv = $('<div></div>');
   
 
   $("main").append($heroDiv);
@@ -123,7 +77,7 @@ module.exports.loadHome = function() {
 
   $($heroDiv).append($heroImgBox);
   $heroImgBox.attr("id", "home-hero-img");
-  $('<img src="../img/fam-guy-eli.png" id="hero-logo"></img>"').appendTo("#home-hero-img");
+  $('<img src="../img/eli-face.png" id="hero-logo"></img>"').appendTo("#home-hero-img");
   $($heroDiv).append($homeTitle);  
 
   $("main").append($storyBox);
@@ -139,8 +93,18 @@ module.exports.loadHome = function() {
     id: "game-control"
   });
   $guitarIcon.addClass("hobby").attr("src", "../img/guitar.png");
+
+  $("main").append($toolsDiv);
+  $toolsDiv.attr("id", "toolsDiv");
+  $($toolsDiv).append($toolsTitle);
+  $($toolsDiv).append($tools);
+
+  $("main").append($canvasDiv);
+  $canvasDiv.attr("id", "canv");
+  $($canvasDiv).append($canvasBox);
+  $canvasBox.attr("id", "myCanvas");
 };
-},{"jquery":6}],4:[function(require,module,exports){
+},{"jquery":5}],3:[function(require,module,exports){
 'use strict';
 
 // ALL COMMENTED LINES WILL BE USED TO MODULARIZE. DO NOT DELETE ELI
@@ -150,7 +114,6 @@ const $ = require('jquery');
 let home = require("./home");
 let contact = require("./contact");
 let projects = require("./projects");
-let blog = require("./blog");
 
 let printFooterDate = () => {
   let todaysDate = new Date(),
@@ -199,7 +162,7 @@ $("#home-link").click((e) => {
 
 // console.log('retrievedPosts: ', JSON.parse(retrievedPosts));
 
-},{"./blog":1,"./contact":2,"./home":3,"./projects":5,"jquery":6}],5:[function(require,module,exports){
+},{"./contact":1,"./home":2,"./projects":4,"jquery":5}],4:[function(require,module,exports){
 'use strict';
 
 const $ = require('jquery');
@@ -233,7 +196,7 @@ module.exports.loadProjects = () => {
    id: "contact-moji"
   });
 };
-},{"jquery":6}],6:[function(require,module,exports){
+},{"jquery":5}],5:[function(require,module,exports){
 /*!
  * jQuery JavaScript Library v3.2.1
  * https://jquery.com/
@@ -10488,4 +10451,4 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-},{}]},{},[4]);
+},{}]},{},[3]);

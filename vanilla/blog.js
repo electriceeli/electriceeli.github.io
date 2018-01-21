@@ -3,13 +3,12 @@
 // ALL COMMENTED LINES WILL BE USED TO MODULARIZE. DO NOT DELETE ELI
 
 const blogHolder = document.getElementById('blog-holder');
+const contentElement = document.getElementById("contentElement");
 
 let focusBoxTitle = document.createElement('p');
   focusBoxTitle.setAttribute("id", "more-info");
   focusBoxTitle.innerHTML = "Click a blog post below to read it here";
   contentElement.prepend(focusBoxTitle);
-  
-// console.log(blogsLocal);
 
  const xhr = new XMLHttpRequest();
  xhr.open("GET", "../data/blog-posts.json");

@@ -7,7 +7,6 @@ const $ = require('jquery');
 let home = require("./home");
 let contact = require("./contact");
 let projects = require("./projects");
-let blog = require("./blog");
 
 let printFooterDate = () => {
   let todaysDate = new Date(),

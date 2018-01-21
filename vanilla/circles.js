@@ -4,14 +4,14 @@ const canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
 
 // set width and height of canvas to window size to ensure resolution quality
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width = window.innerWidth / 1.6;
+canvas.height = window.innerHeight / 2;
 
 // define starting position (x and y) and frame change distance (dx and dy)
 var x = canvas.width/2;
 var y = canvas.height-30;
 var dx = -8;
-var dy = -5;
+var dy = -8;
 
 // set a function to call a random number () to animate shapes color
 function paulIrish() { 
@@ -63,4 +63,4 @@ function draw() {
 }
 
 // set rate in milliseconds of next frame. 10-40 milliseconds is visually appealing range
-setInterval(draw, 2);
+setInterval(draw, 10);

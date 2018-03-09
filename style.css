@@ -14,8 +14,22 @@ footer {
   font-family: sans-serif;
 }
 
+h1 {
+  padding: 0;
+  padding-bottom: 3%;
+  margin: 0;
+  color: white;
+}
+
+.resource-link {
+  display: block;
+  text-decoration: none;
+  color: rgb(73, 129, 108)
+}
+
 p {
   margin: 0 !important;
+  color: white;
 }
 
 div {
@@ -31,7 +45,17 @@ ul li {
   position: relative;
 }
 
-a {
+h5 {
+  color: white;
+}
+
+h5 a {
+  transition: 0;
+  font-size: 1rem;
+  background: black;
+}
+
+.navA {
   text-decoration: none;
   display: inline-block;
   color: white;
@@ -212,43 +236,44 @@ div:hover .options {
   display: none;
 }
 
+.fadeIn {
+  z-index: 10;
+}
+
+@keyframes scoot {
+  from {top: 25%;}
+  to {top: 45%;}
+}
+
+
  /* PAGE TRANSITION */
 
-body::after, body::before {
-  /* these are the 2 half blocks which cover the content once the animation is triggered */
-  height: 50vh;
-  width: 100%;
-  position: fixed;
-  left: 0;
-}
-body::before {
-  top: 0;
-  transform: translateY(-100%);
-}
-body::after {
-  bottom: 0;
-  transform: translateY(100%);
-}
-body.page-is-changing::after, body.page-is-changing::before {
-  transform: translateY(0);
+ nav:hover ~ .page__style { animation: scoot 1s forwards; }
+
+ .page__style {
+  background: black;
+	font-family: OpenSans-Regular, sans-serif;
+	position: fixed;
+	top: 25%;
+	right: 10%;
+	bottom: 25%;
+	left: 10%;
+	height: 70%;
+	width: 80%;
+	margin: auto auto;
+  overflow: hidden;
 }
 
-.cd-loading-bar {
-  /* this is the loading bar - visible while switching from one page to the following one */
-  position: fixed;
-  height: 2px;
-  width: 90%;
-}
-.cd-loading-bar::before {
-  /* this is the progress bar inside the loading bar */
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  transform: scaleX(0);
-  transform-origin: left center;
-}
-.page-is-changing .cd-loading-bar::before {
-  transform: scaleX(1);
+ .animate_content {
+   animation: animate 3s linear;
+ }
 
+@keyframes animate {
+  10% {transform: scale(1, 0.002);}
+  35% {transform: scale(0.2, 0.002); opacity: 1;}
+  50% {transform: scale(0.2, 0.002); opacity: 0;}
+  60% {background: white;}
+  85% {transform: scale(1, 0.002);}
+  95% {background: black;}
+  100% {transform: scale(1, 1);}
+}

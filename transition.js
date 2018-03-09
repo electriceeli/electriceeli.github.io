@@ -1,45 +1,49 @@
 
 console.log("testing");
 
-$('nav').on('click', '[data-type="page-transition"]', function(event){
-    event.preventDefault();
-    //detect which page has been selected
-    var newPage = $(this).attr('data');
-    console.log(newPage);
-    //if the page is not animating - trigger animation
-    if( !isAnimating ) changePage(newPage, true);
+$('.btn_nav').click(function() {
+  // animate content
+  $('.page__style').addClass('animate_content');
+  $('.page__description').fadeOut(100).delay(2000).fadeIn();
+
+  setTimeout(function() {
+    $('.page__style').removeClass('animate_content');
+  }, 3200);
+
+  //remove fadeIn class after 1500ms
+  setTimeout(function() {
+    $('.page__style').removeClass('fadeIn');
+  }, 1500);
+
 });
 
-function changePage(url, bool) {
-  isAnimating = true;
-  // trigger page animation
-  $('body').addClass('page-is-changing');
-  //...
-  loadNewContent(url, bool);
-  //...
-}
+// on click show page after 1500ms
+$('.home_link').click(function() {
+  setTimeout(function() {
+    $('.home').addClass('fadeIn');
+  }, 2000);
+});
 
-// function loadNewContent(url, bool) {
-//   	var newSectionName = 'cd-'+url.replace('.html', ''),
-//   		section = $('<div class="cd-main-content '+newSectionName+'"></div>');
-  		
-//   	section.load(url+' .cd-main-content > *', function(event){
-//     	// load new content and replace <main> content with the new one
-//       	$('main').html(section);
-//       	//...
-//       	$('body').removeClass('page-is-changing');
-//       	//...
- 
-//       	if(url != window.location){
-//         	//add the new page to the window.history
-//         	window.history.pushState({path: url},'',url);
-//       	}
-// 	});
-// }
+$('.projects_link').click(function() {
+  setTimeout(function() {
+    $('.projects').addClass('fadeIn');
+  }, 2000);
+});
 
-// $(window).on('popstate', function() {
-//     var newPageArray = location.pathname.split('/'),
-//         //this is the url of the page to be loaded 
-//         newPage = newPageArray[newPageArray.length - 1];
-//     if( !isAnimating ) changePage(newPage);
-// });
+$('.resume_link').click(function() {
+  setTimeout(function() {
+    $('.resume').addClass('fadeIn');
+  }, 2000);
+});
+
+$('.resources_link').click(function() {
+  setTimeout(function() {
+    $('.resources').addClass('fadeIn');
+  }, 2000);
+});
+
+$('.contact_link').click(function() {
+  setTimeout(function() {
+    $('.contact').addClass('fadeIn');
+  }, 2000);
+});

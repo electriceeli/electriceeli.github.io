@@ -1,0 +1,316 @@
+body {
+  overflow: hidden;
+  background: black;
+  min-height: 100vh;
+}
+
+nav {
+  text-align: center;
+}
+
+.slogan {
+  border-left: 5px solid #384E77;
+  padding-left: 7px;
+}
+
+ol {
+  color: white;
+  list-style-type: square;
+}
+
+ol li {
+  display: inline;
+}
+
+footer {
+  position: fixed;
+  bottom: 4%;
+  color: white;
+  font-family: sans-serif;
+}
+
+h1 {
+  padding: 0;
+  padding-bottom: 2%;
+  margin: 0;
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+#mask {
+  width: 40px;
+  height: 60px;
+  text-align: center;
+}
+
+#maskbox {
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.resource-link {
+  display: block;
+  text-decoration: none;
+  color: rgb(73, 129, 108)
+}
+
+p {
+  margin: 0 !important;
+  color: white;
+}
+
+div {
+  display: inline-block;
+  padding-top: 0.5em;
+}
+
+ul,
+ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+h5 {
+  color: white;
+}
+
+h5 a {
+  transition: 0;
+  font-size: 1rem;
+  background: black;
+}
+
+.navA {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background: #18314F;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 3px solid #eee;
+  transition: 1.5s;
+  line-height: 0;
+}
+
+.mainBtn {
+  z-index: 3;
+  background: #18314F;
+  font-size: 2rem;
+  border: 5px solid #fff;
+  margin-bottom: 0.5em;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+}
+
+.options {
+  z-index: 0;
+  display: none;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding: 0 100px;
+  margin-top: 0.5em;
+}
+
+div:hover .mainBtn {
+  background: #f7f7f7;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  color: #555;
+  border-color: #555;
+}
+
+div:hover .options {
+  display: block;
+}
+
+.option {
+  position: relative;
+}
+
+.opt {
+  position: absolute;
+  transition: 1s;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+}
+
+.opt:hover {
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  border-color: #555;
+  color: #384E77;
+  background: #fff;
+}
+
+.opt1 {
+  top: -1em;
+  left: -1.5em;
+  animation:navmove 1.0s;
+  -moz-animation:navmove 1.0s; /* Firefox */
+  -webkit-animation:navmove 1.0s; /* Safari and Chrome */
+}
+
+@keyframes navmove {
+     from {top: -3.5em; left: 0; opacity: 0;} 
+     to{top: -1em; left: -1.5em; opacity: 1;}
+   }
+   @-moz-keyframes navmove {
+     from {top: -3.5em; left: 0; opacity: 0;} 
+     to{top: -1em; left: -1.5em; opacity: 1;}
+   }
+   @-webkit-keyframes navmove {
+     from {top: -3.5em; left: 0; opacity: 0;} 
+     to{top: -1em; left: -1.5em; opacity: 1;} 
+   }
+
+.opt2 {
+  top: 0;
+  left: 50%;
+  margin-left: -1.1em;
+  animation:navmove2 1s;
+  -moz-animation:navmove2 1s; /* Firefox */
+  -webkit-animation:navmove2 1s; /* Safari and Chrome */
+}
+
+@keyframes navmove2 {
+     from {top: -3.5em; left: 50%; opacity: 0;} 
+     to{top: 0; left: 50%; opacity: 1;}
+   }
+   @-moz-keyframes navmove2 {
+     from {top: -3.5em; left: 50%; opacity: 0;} 
+     to{top: 0; left: 50%; opacity: 1;}
+   }
+   @-webkit-keyframes navmove2 {
+     from {top: -3.5em; left: 50%; opacity: 0;} 
+     to{top: 0; left: 50%; opacity: 1;} 
+   }
+
+.opt3 {
+  top: -1em;
+  right: -1.5em;
+  animation:navmove3 1s;
+  -moz-animation:navmove3 1s; /* Firefox */
+  -webkit-animation:navmove3 1s; /* Safari and Chrome */
+}
+
+@keyframes navmove3 {
+     from {top: -3.5em; right: 0; opacity: 0;} 
+     to{top: -1em; right: -1.5em; opacity: 1;}
+   }
+   @-moz-keyframes navmove3 {
+     from {top: -3.5em; right: 0; opacity: 0;} 
+     to{top: -1em; right: -1.5em; opacity: 1;}
+   }
+   @-webkit-keyframes navmove3 {
+     from {top: -3.5em; right: 0; opacity: 0;} 
+     to{top: -1em; right: -1.5em; opacity: 1;} 
+ }
+
+.opt4 {
+  top: -3.5em;
+  right: -2.5em;
+  animation:navmove4 1s;
+  -moz-animation:navmove4 1s; /* Firefox */
+  -webkit-animation:navmove4 1s; /* Safari and Chrome */
+}
+
+@keyframes navmove4 {
+     from {top: -3.5em; right: 0; opacity: 0;} 
+     to{top: -3.5em; right: -2.5em; opacity: 1;}
+   }
+   @-moz-keyframes navmove4 {
+     from {top: -3.5em; right: 0; opacity: 0;} 
+     to{top: -3.5em; right: -2.5em; opacity: 1;}
+   }
+   @-webkit-keyframes navmove4 {
+     from {top: -3.5em; right: 0; opacity: 0;} 
+     to{top: -3.5em; right: -2.5em; opacity: 1;} 
+ }
+
+.opt5 {
+  top: -3.5em;
+  right: 4.5em;
+  animation:navmove5 1s;
+  -moz-animation:navmove5 1s; /* Firefox */
+  -webkit-animation:navmove5 1s; /* Safari and Chrome */
+}
+
+@keyframes navmove5 {
+     from {top: -3.5em; right: 1.5em; opacity: 0;} 
+     to{top: -3.5em; right: 4.5em; opacity: 1;}
+   }
+   @-moz-keyframes navmove4 {
+     from {top: -3.5em; right: 1.5em; opacity: 0;} 
+     to{top: -3.5em; right: 4.5em; opacity: 1;}
+   }
+   @-webkit-keyframes navmove4 {
+     from {top: -3.5em; right: 1.5em; opacity: 0;} 
+     to{top: -3.5em; right: 4.5em; opacity: 1;} 
+ }
+
+.popup {
+  display: none;
+}
+
+.fadeIn {
+  z-index: 10;
+}
+
+@keyframes scoot {
+  from {top: 25%;}
+  to {top: 45%;}
+}
+
+
+ /* PAGE TRANSITION */
+
+ nav:hover ~ .page__style { animation: scoot 1s forwards; }
+
+ .page__style {
+  background: black;
+	font-family: OpenSans-Regular, sans-serif;
+	position: fixed;
+	top: 25%;
+	right: 15%;
+	bottom: 25%;
+	left: 10%;
+	height: 70%;
+  width: 80%;
+	margin: auto auto;
+  overflow: scroll;
+}
+
+ .animate_content {
+   animation: animate 3s linear;
+ }
+
+@keyframes animate {
+  10% {transform: scale(1, 0.002);}
+  35% {transform: scale(0.2, 0.002); opacity: 1;}
+  50% {transform: scale(0.2, 0.002); opacity: 0;}
+  60% {background: white;}
+  85% {transform: scale(1, 0.002);}
+  95% {background: black;}
+  100% {transform: scale(1, 1);}
+}
+
+@media (max-width: 662px) {
+  ol li {
+      display: block;
+  }
+}

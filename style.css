@@ -375,6 +375,25 @@ div:hover .options {
     margin-bottom: 3vh;
     margin-right: 3vw;  
   }
+
+  .page__style {
+    background: black;
+    font-family: OpenSans-Regular, sans-serif;
+    position: fixed;
+    top: 45%;
+    right: 25%;
+    bottom: 25%;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+    margin: auto auto;
+    overflow: scroll;
+  }
+
+  @keyframes scoot {
+    from {top: 45%;}
+    to {top: 55%;}
+  }
 }
 
 @media (min-width: 1000px) {

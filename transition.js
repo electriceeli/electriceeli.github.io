@@ -4,7 +4,7 @@ console.log("testing");
 $('.btn_nav').click(function() {
   // animate content
   $('.page__style').addClass('animate_content');
-  $('.page__description').fadeOut(100).delay(2000).fadeIn();
+  $('.page__description').fadeOut(100).delay(3000).fadeIn(1500);
 
   setTimeout(function() {
     $('.page__style').removeClass('animate_content');

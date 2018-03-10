@@ -7,6 +7,18 @@ nav {
   text-align: center;
 }
 
+.home {
+  padding-top: 0;
+}
+
+#home {
+  padding-top: 0;  
+}
+
+.page__description {
+  padding-top: 0;  
+}
+
 .page-title {
   text-align: center;
   margin: 0 auto;
@@ -15,7 +27,6 @@ nav {
 .slogan {
   border-left: 5px solid #384E77;
   padding-left: 7px;
-  /* width: 80%; */
 }
 
 .para {
@@ -31,10 +42,11 @@ nav {
 
 ol {
   color: white;
+  margin: 2vh 15vw;
 }
 
 ol li {
-  display: inline;
+  display: block;
 }
 
 footer {
@@ -158,7 +170,7 @@ h5 a {
 }
 
 .options {
-  z-index: 0;
+  z-index: 10000;
   display: none;
   position: relative;
   width: 100px;
@@ -182,6 +194,7 @@ div:hover .options {
 
 .option {
   position: relative;
+  z-index: 10000;  
 }
 
 .opt {
@@ -320,6 +333,11 @@ div:hover .options {
   to {top: 55%;}
 }
 
+@keyframes scootMOB {
+  from {top: 40%;}
+  to {top: 55%;}
+}
+
 
  /* PAGE TRANSITION */
 
@@ -354,9 +372,6 @@ div:hover .options {
 }
 
 @media (max-width: 662px) {
-  ol li {
-      display: block;
-  }
 
   .tool-logo {
     margin-top: -5vh;
@@ -376,24 +391,6 @@ div:hover .options {
     margin-right: 3vw;  
   }
 
-  .page__style {
-    background: black;
-    font-family: OpenSans-Regular, sans-serif;
-    position: fixed;
-    top: 45%;
-    right: 25%;
-    bottom: 25%;
-    left: 10%;
-    height: 80%;
-    width: 80%;
-    margin: auto auto;
-    overflow: scroll;
-  }
-
-  @keyframes scoot {
-    from {top: 45%;}
-    to {top: 55%;}
-  }
 }
 
 @media (min-width: 1000px) {
@@ -405,4 +402,14 @@ div:hover .options {
     margin-right: 5vw;
     margin-left: 5vw;  
   }
+}
+
+
+@media (max-height: 700px) {
+  .page__style {
+    top: 40%;
+  }
+
+  nav:hover ~ .page__style { animation: scootMOB 1s forwards; }
+  
 }

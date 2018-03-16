@@ -29,15 +29,19 @@ nav {
   padding-left: 7px;
 }
 
-.para {
-  border-left: 5px solid #384E77;
-  padding-left: 7px;
+.dafoe {
+  font-family: "Mr Dafoe", sans-serif;
+  font-size: 3em;
 }
 
 .home-text {
   padding: 3vh 8vw;
   width: 80%;
   margin: auto;
+}
+
+.center {
+  text-align: center;
 }
 
 ol {
@@ -47,6 +51,16 @@ ol {
 
 ol li {
   display: block;
+}
+
+a {
+  color: white;
+}
+
+.w100 {
+  padding: 3vh 5vw;
+  width: 80%;
+  margin: auto;
 }
 
 footer {
@@ -334,8 +348,8 @@ div:hover .options {
 }
 
 @keyframes scootMOB {
-  from {top: 40%;}
-  to {top: 55%;}
+  from {top: 45%;}
+  to {top: 70%;}
 }
 
 
@@ -384,6 +398,10 @@ div:hover .options {
     padding-left: 4vw;
   }
 
+  .download {
+    padding-left: 0 !important;
+  }
+
   .node-logo {
     height: 11vh;
     width: 17vw;  
@@ -407,7 +425,7 @@ div:hover .options {
 
 @media (max-height: 700px) {
   .page__style {
-    top: 40%;
+    top: 45%;
   }
 
   nav:hover ~ .page__style { animation: scootMOB 1s forwards; }

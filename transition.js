@@ -1,5 +1,5 @@
 
-console.log("testing");
+console.log("Hi! My name is Eli. Thanks for checking out my site!");
 
 $('.btn_nav').click(function() {
   // animate content

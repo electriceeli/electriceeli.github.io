@@ -3,6 +3,10 @@ body {
   background: black;
 }
 
+#nav-key-1 {
+  display: none;
+}
+
 nav {
   text-align: center;
 }
@@ -34,10 +38,11 @@ nav {
   font-size: 3em;
 }
 
-.home-text {
+.pages-body {
   padding: 3vh 8vw;
   width: 80%;
   margin: auto;
+  color: white;
 }
 
 .center {
@@ -55,6 +60,23 @@ ol li {
 
 a {
   color: white;
+}
+
+#nss-logo {
+  width: 100px;
+  padding-left: 35%;
+}
+
+.contact-logo {
+  width: 100px;
+}
+
+.project-logo {
+  width: 60px;
+}
+
+#resume-list {
+  font-size: 10;
 }
 
 .w100 {
@@ -83,6 +105,7 @@ footer {
 
 #center-tools {
   text-align: center;
+  padding-bottom: 5%;
 }
 
 .tool-logo {
@@ -142,8 +165,19 @@ ul,
 ul li {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: -4px;
   position: relative;
+  font-size: 11px;
+}
+
+.project-scshot {
+  width: 70%;
+  padding-left: 15%;
+}
+
+.project-icons {
+  display: inline;
+  padding-left: 35%;
 }
 
 h5 {
@@ -392,7 +426,7 @@ div:hover .options {
     margin-bottom: -2vh;
   }
 
-  .home-text {
+  .pages-body {
     width: 90%;
     padding: 0;
     padding-left: 4vw;
@@ -416,6 +450,11 @@ div:hover .options {
     margin-bottom: 2vh;
     margin-right: 5vw;
     margin-left: 5vw;  
+  }
+
+  .pages-body {
+    width: 50%;
+    margin-left: 16%;
   }
 }
 

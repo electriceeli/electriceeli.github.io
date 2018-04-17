@@ -16,23 +16,23 @@
             <a class="mainBtn navA" href="#">
                 <i class="fa fa-fire fa-sm" id="main-spin"></i></a>
             <ul class="options">
-                <li class"option option1">
+                <li class"option option1" title="Resources">
                     <a class="opt opt1 navA" href="#" data-type="page-transition" class="btn_nav resources_link"><i class="fa fa-asterisk btn_nav resources_link"></i></a>
                     <p class="popup">Resources</p>
                 <li>
-                <li class"option option2">
+                <li class"option option2" title="Home">
                     <a class="opt opt2 navA" href="#" data-type="page-transition" class="btn_nav home_link"><i class="fa fa-home btn_nav home_link"></i></a>
                     <p class="popup">Home</p>
                 <li>
-                <li class"option option3">
+                <li class"option option3" title="Projects">
                     <a class="opt opt3 navA" href="#" data-type="page-transition" class="btn_nav projects_link"><i class="fa fa-cog btn_nav projects_link"></i></a>
                     <p class="popup">Projects</p>
                 <li>  
-                <li class"option option4">
+                <li class"option option4" title="Contact">
                     <a class="opt opt4 navA" href="#" data-type="page-transition" class="btn_nav contact_link"><i class="fa fa-inbox btn_nav contact_link"></i></a>
                     <p class="popup">Contact</p>
                 <li>
-                <li class"option option5">
+                <li class"option option5" title="Resume">
                     <a class="opt opt5 navA" href="#" data-type="page-transition" class="btn_nav resume_link"><i class="fa fa-camera-retro btn_nav resume_link"></i></a>
                     <p class="popup">Resume</p>
                 <li>
@@ -45,16 +45,31 @@
             <div id="projects">
             <h1 class="page-title dafoe">Projects</h1>
             <br>
-            <p>Click the title of any project to see it deployed</p>
-            <br>            
-            <a class="resource-link" href="https://galaxy-game-blog.firebaseapp.com/#!/home">Game Galaxy</a>
-            <p>Game Galaxy was my front-end capstone project for Nashville Software School. I wanted to build a social blogging site centered on sharing information and opinions on video games. The tools I used included AngularJS, Lodash, JQuery, Sass, Bootstrap, and more. <a href="https://github.com/e-x-wilson/game-galaxy"><br>Check out the source code and readme on Github.</a></p>
-            <br>
-            <a class="resource-link" href="https://www.npmjs.com/package/asciimals">Asciimals</a>
-            <p>A very light tool created so I could display ASCII animal art in my Terminal. Built using NodeJS.</p>
-            <br>
-            <a class="resource-link" href="https://popcornbrothersmoveiclub.com">Popcorn Brothers Podcast</a>
-            <p>A movie review and discussion podcast I cohost with my older brother. An good example of how my skills as a web developer have grown.</p>
+            <div class="pages-body">
+                <p>Click the title of any project or the icons below to see it delpoyed or dig into the repo on Github</p>
+                <br>
+                <img src="img/gg-repo.png" class="project-scshot">
+                <br>
+                <a class="resource-link" href="https://galaxy-game-blog.firebaseapp.com/#!/home"><h2>Game Galaxy</h2></a>
+                <p>Game Galaxy was my front-end capstone project for Nashville Software School. I wanted to build a social blogging site centered on sharing information and opinions on video games. The tools I used included AngularJS, Lodash, JQuery, Sass, Bootstrap, and more.</p>
+                <br>
+                <div class="project-icons">
+                    <a href="https://galaxy-game-blog.firebaseapp.com/#!/home"><img class="project-logo" src="img/link.png" title="Check out the deployed version!"></a>
+                    <a href="https://github.com/e-x-wilson/game-galaxy"><img class="project-logo" src="img/github.png" title="Check out the repo on Github"></a>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <img src="img/asciimals.png" class="project-scshot">   
+                <br>             
+                <a class="resource-link" href="https://www.npmjs.com/package/asciimals"><h2>Asciimals</h2></a>
+                <p>A very light tool created so I could display ASCII animal art in my Terminal. Built using NodeJS.</p>
+                <br>
+                <div class="project-icons">
+                    <a href="https://www.npmjs.com/package/asciimals"><img class="project-logo" src="img/link.png" title="Check out the deployed version!"></a>
+                    <a href="https://github.com/e-x-wilson/asciimals"><img class="project-logo" src="img/github.png" title="Check out the repo on Github"></a>
+                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -63,16 +78,18 @@
         <div class="page__description">
             <div id="resources">
             <h1 class="page-title dafoe">Resources</h1>
-            <h5>Cool links and tools to check out</h5>
-            <br>
-                <a class="resource-link" href="https://www.npmjs.com/package/please-setup-git">Please Setup Git</a>
-                <a class="resource-link" href="https://github.com/getify/You-Dont-Know-JS">You Don't Know JS by Kyle Simpson</a>
-                <a class="resource-link" href="https://teamtreehouse.com/">Team Treehouse</a>
-                <a class="resource-link" href="https://syntax.fm/">Syntax FM</a>
-                <a class="resource-link" href="https://www.codingblocks.net/">Coding Blocks</a>
-                <a class="resource-link" href="http://tanispodcast.com/">TANIS</a>
-                <a class="resource-link" href="https://www.codewars.com/">CodeWars</a>
-                <a class="resource-link" href="http://www.filthycasuals.com.au/">Filthy Casuals</a>
+                <div class="pages-body">
+                    <h5>Cool links to check out. From podcasts to learning tools, here is a collection of content that I find neat or useful</h5>
+                    <br>
+                    <a class="resource-link" href="https://www.npmjs.com/package/please-setup-git">Please Setup Git</a>
+                    <a class="resource-link" href="https://github.com/getify/You-Dont-Know-JS">You Don't Know JS by Kyle Simpson</a>
+                    <a class="resource-link" href="https://teamtreehouse.com/">Team Treehouse</a>
+                    <a class="resource-link" href="https://syntax.fm/">Syntax FM</a>
+                    <a class="resource-link" href="https://www.codingblocks.net/">Coding Blocks</a>
+                    <a class="resource-link" href="http://tanispodcast.com/">TANIS</a>
+                    <a class="resource-link" href="https://www.codewars.com/">CodeWars</a>
+                    <a class="resource-link" href="http://www.filthycasuals.com.au/">Filthy Casuals</a>
+                </div>
             </div>
         </div>
     </div>
@@ -81,12 +98,14 @@
         <div class="page__description">
             <div id="contact">
             <h1 class="page-title dafoe">Contact</h1>
-            <br>
-            <br>
-            <br>
-            <h2>Coming soon!</h2>
-        
-                
+            <div class="pages-body center">
+                <a href="https://www.linkedin.com/in/eli-wilson/"><img class="contact-logo" src="img/linkedin.png" alt="HTML"></a>             
+                <h3>LinkedIn</h3>
+                <a href="mailto:elijah.b.wilson@gmail.com"><img class="contact-logo" src="img/mail.png" alt="HTML"></a>              
+                <h3>elijah.b.wilson@gmail.com</h3>
+                <a href="https://github.com/e-x-wilson"><img class="contact-logo" src="img/github.png" alt="HTML"></a>           
+                <h3>Github</h3>
+            </div>
             </div>
         </div>
     </div>
@@ -95,8 +114,35 @@
         <div class="page__description">
             <div id="resume">
             <h1 class="center dafoe">Resume</h1>
-            <br>
-            <div class="center w100">
+            <div class="pages-body">
+                <img id="nss-logo" src="img/nss-logo-compact.png" alt="HTML">                
+                <h4>Apprentice Software Developer</h4>
+                <h5>Nashville Software School ~ Nov 2017 - May 2018</h5>
+                <h6>Intensive part-time software development bootcamp focusing on full-stack development fundamentals and problem-solving.</h6>
+                <ul id="resume-list">
+                    <li>- Source code version control with Git/Github</li>
+                    <li>- Single Page Application building with JS, CSS, and HTML including libraries</li>
+                    <li>- Project management/tracking with Github Projects + Issue Tracking</li>
+                    <li>- JavaScript fundamentals leveraging DRY, modular, readable code and reusable components</li>
+                    <li>- DOM manipulation and AJAX calls with jQuery</li>
+                    <li>- Built single-page and CRUD applications in the AngularJS and React frameworks leveraging HTML, CSS, and JavaScript</li>
+                    <li>- Front-end templating with HandlebarsJS</li>
+                    <li>- Task Automation with Grunt: Linting with JSHint, module bundling with Browserify, SASS compilation</li>
+                    <li>- Unit testing with Mocha and Chai</li>
+                    <li>- Styled applications with the CSS framework Bootstrap and wrote custom styles with SASS; CSS Grid and Flexbox</li>
+                </ul>
+                <br>
+                <h4>Marketing Manager</h4>
+                <h5>New Daisy Theatre ~ Aug 2016 - Nov 2017</h5>
+                <h6>Head of marketing for a 1200-capacity concert venue on Beale Street. Included social media and print marketing campaigns, budgeting, reporting, and team management.</h6>                
+                <ul id="resume-list">
+                    <li>- Multi-platform social media ad campaigns </li>
+                    <li>- Print marketing campaigns from billboards to flyering</li>
+                    <li>- Radio advertising campaigns. Negotiation, budgeting, and writing.</li>
+                    <li>- Budgeting and expense reporting</li>
+                    <li>- Street team management and execution</li>
+                    <li>- Leading and organizing weekly staff meetings</li>
+                </ul>
             </div>
             </div>
         </div>
@@ -107,10 +153,10 @@
             <div id="home">
             <h1 class="page-title dafoe">Eli Wilson</h1>
             <br>
-            <div class="home-text">
+            <div class="pages-body">
                 <p class="slogan">I am currently attending the Nashville Software School Full-Stack Software Development program. </p>  
                 <br>
-                <p class="para">I am an avid problem solver that loves to create solutions to real world problems with technology. The desire to create applications that allow people to connect, share , and create together keeps me up at night.</p>    
+                <p class="para">I am an avid problem solver that loves to create solutions to real world problems with technology. The desire to create applications that allow people to connect, share, and create together keeps me up at night.</p>    
                 <br>
                 <p class="para">I have always held interest in how software worked behind the scenes. After graduating from the University of Memphis, and spending a year working as the head of marketing at the New Daisy Theatre on Beale Street. Throughout my year of working with web applications, pages, and social media, I became determined and inspired to turn to a career path that would satisy my desire to be creative, my love of language, and my fascination with software.</p>
             </div>
@@ -125,7 +171,7 @@
                     <img class="tool-logo" src="img/html.svg" alt="HTML">
                 </div>
                 </div>
-                
+            </div>
         </div>
     </div>
 

@@ -71,6 +71,10 @@ a {
   width: 100px;
 }
 
+.project-logo {
+  width: 60px;
+}
+
 #resume-list {
   font-size: 10;
 }
@@ -101,7 +105,7 @@ footer {
 
 #center-tools {
   text-align: center;
-  padding-bottom: 15%;
+  padding-bottom: 5%;
 }
 
 .tool-logo {
@@ -161,8 +165,19 @@ ul,
 ul li {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: -4px;
   position: relative;
+  font-size: 11px;
+}
+
+.project-scshot {
+  width: 70%;
+  padding-left: 15%;
+}
+
+.project-icons {
+  display: inline;
+  padding-left: 35%;
 }
 
 h5 {

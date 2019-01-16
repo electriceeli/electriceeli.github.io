@@ -332,11 +332,11 @@ form .row:first-child .floating-label-form-group {
 }
 
 a {
-  color: #3C4356;
+  color: rgb(143, 151, 173);
 }
 
 a:focus, a:hover, a:active {
-  color: #128f76;
+  color: #1d967e;
 }
 
 .btn {

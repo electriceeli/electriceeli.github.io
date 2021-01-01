@@ -1,0 +1,30 @@
+{
+  "name": "e-x-wilson.github.io",
+  "version": "1.0.0",
+  "description": "Eli Wilson portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-x-wilson/e-x-wilson.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Eli Wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e-x-wilson/e-x-wilson.github.io/issues"
+  },
+  "homepage": "https://github.com/e-x-wilson/e-x-wilson.github.io#readme",
+  "dependencies": {
+    "next": "10.0.4",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
+}

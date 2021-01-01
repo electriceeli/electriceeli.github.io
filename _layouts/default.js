@@ -1,4 +1,3 @@
-// _layouts/default.js
 import Head from "next/head";
 import Header from "@includes/header";
 import Footer from "@includes/footer";

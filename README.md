@@ -1,6 +1,5 @@
 # Personal Site Repository
 
-Simple portfolio for your viewing pleasure!
+Simple portfolio for your viewing pleasure! At least once I have made it again.
 
-Check it at https://e-x-wilson.github.io/#
-OR elijahwilson.codes
+Check it at (elijahwilson.codes)[elijahwilson.codes]

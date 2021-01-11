@@ -17,15 +17,14 @@ export async function getStaticProps() {
 export default function Blog(props) {
   return (
     <DefaultLayout title={props.title} description={props.description}>
-      <hr />
-      <p>🚧 Under construction. Come back soon! 🚧</p>
-      <p>Signed,</p>
-      <p>Eli :)</p>
+      <p>🚧 Under construction. Come back soon! Or check out what's already here! 🚧</p>
+      <p>Signed, Eli :)</p>
       <hr />
       {/* TODO: Build page then actually use the posts */}
       {/* Built with https://css-tricks.com/building-a-blog-with-next-js/ */}
       {/* TODO: Build a separate portfolio page that shows games/showGO */}
-      {/* <ul>
+      <h3>Blog Posts</h3>
+      <ul>
         {props.posts.map(function(post, idx) {
           return (
             <li key={idx}>
@@ -35,7 +34,7 @@ export default function Blog(props) {
             </li>
           );
         })}
-      </ul> */}
+      </ul>
     </DefaultLayout>
   );
 }

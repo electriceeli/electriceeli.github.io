@@ -1,5 +1,3 @@
-# Personal Site Repository
+# Personal Site Repo
 
-Simple portfolio for your viewing pleasure! At least once I have made it again.
-
-Check it at [elijahwilson.codes](http://www.elijahwilson.codes)
+Simple portfolio! At least once I have finished making it again.

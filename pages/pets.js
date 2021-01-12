@@ -1,5 +1,4 @@
 import DefaultLayout from "@layouts/default";
-import Image from "next/image";
 
 export default function Pets(props) {
   return (
@@ -7,11 +6,11 @@ export default function Pets(props) {
       <div style={{ textAlign: "right" }}>
         <h2 style={{ fontFamily: "Architects Daughter, cursive" }}>Missy 🐈</h2>
       </div>
-      <Image
+      <img
         src="/missy.png"
         alt="Pictures of my cat Missy"
-        width={550}
-        height={300}
+        width="100%"
+        height="65%"
       />
 
       <div style={{ textAlign: "right" }}>
@@ -19,11 +18,11 @@ export default function Pets(props) {
           Sophie 🐕
         </h2>
       </div>
-      <Image
+      <img
         src="/sophie.png"
         alt="Pictures of my dog Sophie"
-        width={550}
-        height={300}
+        width="100%"
+        height="65%"
       />
     </DefaultLayout>
   );

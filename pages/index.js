@@ -47,8 +47,9 @@ export default function Blog(props) {
       <div style={{ textAlign: "center" }}>
         <img
           src="/tv-cat.jpg"
-          width="85%"
+          alt="My cat Missy standing in front of the televsion blocking my gaming."
           style={{ border: "5px solid black", borderRadius: 10 }}
+          width="85%"
         />
       </div>
 

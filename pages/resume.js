@@ -3,7 +3,9 @@ import DefaultLayout from "@layouts/default";
 export default function Resume(props) {
   return (
     <DefaultLayout title={props.title} description={props.description}>
-      <h2 style={{ fontFamily: "Architects Daughter, cursive" }}>Tools</h2>
+      <div style={{ textAlign: "right" }}>
+        <h2 style={{ fontFamily: "Architects Daughter, cursive" }}>Tools ⚙️</h2>
+      </div>
 
       <h4 style={{ fontFamily: "Oswald, sans-serif", paddingLeft: 5 }}>
         🕸️ Javascript
@@ -29,7 +31,9 @@ export default function Resume(props) {
         Beanstalk.
       </p>
 
-      <h2 style={{ fontFamily: "Architects Daughter, cursive" }}>Story</h2>
+      <div style={{ textAlign: "right" }}>
+        <h2 style={{ fontFamily: "Architects Daughter, cursive" }}>Story 📰</h2>
+      </div>
 
       <h4 style={{ fontFamily: "Oswald, sans-serif", paddingLeft: 5 }}>
         🐄 Livestock Nutrition Center / Software Engineer - 2019 to present

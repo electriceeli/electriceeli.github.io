@@ -18,7 +18,7 @@ I love web development but the whole reason I went to software bootcamp was to o
 My current goals are to make two or three games using Unity to list in a portfolio and link from github and itch to this site. I have done some Udemy and Unity Learn courses and am getting a feel for things. My excitement is as deep as it is wide but I am still spending time trying to learn C# as well as I know Javascript. If my mentor taught me anything, it's that clean code practices cannot be undervalued.
 
 <div style="text-align:center">
-<img src="/acnh.png" alt="Happy new year from my island to yours" width="85%" style="border:5px solid black"/>
+<img src="/acnh.jpg" alt="Happy new year from my island to yours" width="85%" style="border:5px solid black"/>
 </div>
 
 Additionally I'm working on building a little React Native app in my spare time but that projects a secret and I'll let y'all know if and when I can share anything about it _wink_

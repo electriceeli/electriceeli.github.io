@@ -4,19 +4,26 @@ export default function Footer() {
       <a
         href="https://github.com/electriceeli"
         target="_blank"
-        style={{ fontFamily: "Architects Daughter, cursive;", marginLeft: 10 }}
+        style={{ fontFamily: "Architects Daughter, cursive", marginLeft: 10 }}
       >
         GitHub
       </a>
       <a
         href="https://twitter.com/electriceeli"
         target="_blank"
-        style={{ fontFamily: "Architects Daughter, cursive;", marginLeft: 10 }}
+        style={{ fontFamily: "Architects Daughter, cursive", marginLeft: 10 }}
       >
         Twitter
       </a>
+      <a
+        href="https://electriceeli.itch.io/"
+        target="_blank"
+        style={{ fontFamily: "Architects Daughter, cursive", marginLeft: 10 }}
+      >
+        Itch
+      </a>
 
-      <p style={{ fontFamily: "Architects Daughter, cursive;" }}>
+      <p style={{ fontFamily: "Architects Daughter, cursive" }}>
         ©2021 Eli Wilson
       </p>
     </footer>

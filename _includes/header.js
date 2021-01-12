@@ -4,40 +4,56 @@ export default function Header() {
   return (
     <header>
       <div style={{ textAlign: "center" }}>
-        <Link href="/">
-          <a
-            style={{
-              fontFamily: "Architects Daughter, cursive;",
-              marginLeft: 25
-            }}
-          >
-            Home
-          </a>
-        </Link>
         <Link href="/portfolio">
           <a
             style={{
-              fontFamily: "Architects Daughter, cursive;",
-              marginLeft: 25
+              fontFamily: "Architects Daughter, cursive"
             }}
           >
             Portfolio
           </a>
         </Link>
+
         <Link href="/resume">
           <a
             style={{
-              fontFamily: "Architects Daughter, cursive;",
-              marginLeft: 25
+              fontFamily: "Architects Daughter, cursive",
+              marginLeft: 20
             }}
           >
             Resume
           </a>
         </Link>
+
+        <Link href="/pets">
+          <a
+            style={{
+              fontFamily: "Architects Daughter, cursive",
+              marginLeft: 20
+            }}
+          >
+            Pets
+          </a>
+        </Link>
+
+        <Link href="/blog">
+          <a
+            style={{
+              fontFamily: "Architects Daughter, cursive",
+              marginLeft: 20
+            }}
+          >
+            Blog
+          </a>
+        </Link>
       </div>
 
       <div style={{ textAlign: "center", marginTop: 10 }}>
-        <img src="/apple-touch-icon.png" width="100" height="100" />
+        <Link href="/">
+          <a>
+            <img src="/apple-touch-icon.png" width="100" height="100" />
+          </a>
+        </Link>
       </div>
       <hr />
     </header>

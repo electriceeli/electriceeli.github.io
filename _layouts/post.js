@@ -8,8 +8,18 @@ export default function PostLayout(props) {
         <title>{props.title}</title>
       </Head>
       <article>
-        <h1 style={{fontFamily: 'Architects Daughter, cursive;'}}>{props.title}</h1>
-        <div style={{fontFamily: 'Oswald, sans-serif;'}} dangerouslySetInnerHTML={{ __html: props.content }} />
+        <div style={{ textAlign: "right" }}>
+          <h2 style={{ fontFamily: "Architects Daughter, cursive" }}>
+            {props.title}
+          </h2>
+          <h3 style={{ fontFamily: "Architects Daughter, cursive" }}>
+            {props.date}
+          </h3>
+        </div>
+        <div
+          style={{ fontFamily: "Oswald, sans-serif" }}
+          dangerouslySetInnerHTML={{ __html: props.content }}
+        />
       </article>
     </DefaultLayout>
   );

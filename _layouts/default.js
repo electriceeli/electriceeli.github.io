@@ -6,7 +6,7 @@ export default function DefaultLayout(props) {
   return (
     <main>
       <Head>
-        <title>{props.title}</title>
+        <title style={{fontFamily: 'Architects Daughter, cursive;'}}>{props.title}</title>
         <meta name="description" content={props.description} />
       </Head>
       <Header />

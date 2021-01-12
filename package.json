@@ -1,7 +1,7 @@
 {
-  "name": "e-x-wilson.github.io",
+  "name": "electriceeli.github.io",
   "version": "1.0.0",
-  "description": "Eli Wilson portfolio",
+  "description": "Eli Wilson Portfolio",
   "main": "index.js",
   "scripts": {
     "test": "test",

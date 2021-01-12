@@ -1,5 +1,6 @@
 import DefaultLayout from "@layouts/default";
 import Link from "next/link";
+import Image from "next/image";
 import { getConfig, getRecentPosts } from "@api";
 
 export async function getStaticProps() {
@@ -45,8 +46,9 @@ export default function Blog(props) {
       </p>
 
       <div style={{ textAlign: "center" }}>
-        <img
+        <Image
           src="/tv-cat.jpg"
+          alt="My cat Missy standing in front of the televsion blocking my gaming."
           width="85%"
           style={{ border: "5px solid black", borderRadius: 10 }}
         />

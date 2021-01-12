@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -51,7 +52,7 @@ export default function Header() {
       <div style={{ textAlign: "center", marginTop: 10 }}>
         <Link href="/">
           <a>
-            <img src="/apple-touch-icon.png" width="100" height="100" />
+            <Image src="/apple-touch-icon.png" alt="An E logo for Eli" width="100" height="100" />
           </a>
         </Link>
       </div>

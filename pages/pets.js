@@ -7,7 +7,7 @@ export default function Pets(props) {
         <h2 style={{ fontFamily: "Architects Daughter, cursive" }}>Missy 🐈</h2>
       </div>
       <img
-        src="/missy.png"
+        src="/missy.jpg"
         alt="Pictures of my cat Missy"
         width="100%"
         height="65%"
@@ -19,7 +19,7 @@ export default function Pets(props) {
         </h2>
       </div>
       <img
-        src="/sophie.png"
+        src="/sophie.jpg"
         alt="Pictures of my dog Sophie"
         width="100%"
         height="65%"

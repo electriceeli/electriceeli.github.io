@@ -48,8 +48,8 @@ export default function Blog(props) {
         <img
           src="/tv-cat.jpg"
           alt="My cat Missy standing in front of the televsion blocking my gaming."
-          style={{ border: "5px solid black", borderRadius: 10 }}
-          width="85%"
+          style={{ border: "5px solid black" }}
+          width="65%"
         />
       </div>
 

@@ -36,7 +36,14 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body style={{ maxWidth: "550px", margin: "auto", padding: 25, }}>
+        <body
+          style={{
+            maxWidth: "550px",
+            margin: "auto",
+            padding: 24,
+            fontSize: 18
+          }}
+        >
           <Main />
           <NextScript />
         </body>
